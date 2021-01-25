@@ -31,9 +31,7 @@ public class KafkaConsumerConfig {
         props.put(
                 ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,
                 bootstrapAddress);
-        props.put(
-                ConsumerConfig.GROUP_ID_CONFIG,
-                "groupId"); //TODO groupId wasnt recognized
+//TODO groupId wasnt recognized
         props.put(
                 ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG,
                 StringDeserializer.class);
