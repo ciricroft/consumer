@@ -27,8 +27,8 @@ import java.util.Queue;
 public class ListeningController {
 
     @KafkaListener(topics = "objects container")
-    public Obj objReceiver(Obj obj) {
-        return obj;
+    public void objReceiver(Obj obj) {
+        objQueue.add(obj);
     }
 
     @Bean
