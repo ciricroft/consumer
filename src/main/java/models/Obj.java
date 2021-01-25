@@ -12,7 +12,11 @@ import java.util.Date;
 @EnableAutoConfiguration
 @ComponentScan
 @Component
-@Getter @AllArgsConstructor @NoArgsConstructor @EqualsAndHashCode @ToString
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+@EqualsAndHashCode
+@ToString
 public class Obj {
     private int value;
     private Date date;
