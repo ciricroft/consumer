@@ -22,8 +22,8 @@ import java.util.Map;
 @Configuration
 public class KafkaConsumerConfig {
 
-    @Value(value = "${kafka.bootstrapAddress}")
-    private String bootstrapAddress;
+
+    private String bootstrapAddress="localhost:9092";
 
     @Bean
     public ConsumerFactory<String, Obj> objConsumerFactory() {
